@@ -81,7 +81,7 @@ const translations = {
     stats: {
       title: "Năng lực Toàn cầu. Chất lượng Vượt trội.",
       p1: "Axyztant là đơn vị tư vấn và phát triển phần mềm hàng đầu tại Việt Nam. Với đội ngũ chuyên gia công nghệ chuẩn quốc tế, chúng tôi có khả năng linh hoạt mở rộng quy mô dự án lên đến hàng trăm kỹ sư.",
-      p2: "Thế mạnh cốt lõi của chúng tôi nằm ở việc triển khai các hệ thống quản trị (ERP), kiến trúc Blockchain tiên tiến, giải pháp FinTech bảo mật và tích hợp Trí tuệ nhân tạo (AI) vào thực hiện.",
+      p2: "Thế mạnh cốt lõi của chúng tôi nằm ở việc triển khai các hệ thống quản trị (ERP), kiến trúc Blockchain tiên tiến, giải pháp FinTech bảo mật và tích hợp Trí tuệ nhân tạo (AI) vào thực tiễn.",
       l1: "Dự án Hoàn thành", l2: "Khách hàng Doanh nghiệp", l3: "Tỷ lệ Hài lòng", l4: "Châu lục Tiếp cận"
     },
     ai: {
@@ -160,7 +160,10 @@ const translations = {
       s3: "応用AI ＆ データ解析", s3d: "高度なAIモデル（Agentic AIやLLM）を実装し、業務ワークフローの自動化とデータ駆動型の意思決定を実現。",
       s4: "フルスクラッチ開発", s4d: "お客様独自のビジネス課題を解決するための、拡張性の高いWebプラットフォームやモバイルアプリをゼロから構築。",
       s5: "クラウド ＆ DevOps", s5d: "クラウドネイティブアーキテクチャ、Kubernetes、CI/CDパイプラインの自動化によるレガシーシステムの近代化。",
-      s6: "ラボ型開発（ODC）", s6d: "お客様の社内チームとシームレスに連携し、プロジェクトの成功にコミットする即戦力の専任エンジニアリングチームをご提供。"
+      s6: "ラボ型開発（ODC）", s6d: "お客様の社内チームとシームレスに連携し、プロジェクトの成功にコミットする即戦力の専任エンジニアリングチームをご提供。",
+      d1: "エンタープライズ ＆ 金融", d1_1: "経営管理（ERP）", d1_2: "金融・銀行システム", d1_3: "小売・Eコマース",
+      d2: "業務基盤 ＆ オペレーション", d2_1: "物流・サプライチェーン", d2_2: "製造業・インダストリー4.0", d2_3: "不動産テック（PropTech）",
+      d3: "特化型ドメイン", d3_1: "ヘルスケア・ライフサイエンス", d3_2: "教育テクノロジー（EdTech）", d3_3: "環境テック・ESG領域"
     },
     models: {
       badge: "契約形態", title: "ビジネス要件に合わせた開発モデル",
@@ -196,12 +199,13 @@ export default function App() {
   const CDN_BASE = "https://cdn.axyztant.com/images";
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
+    <div className="min-h-screen bg-slate-50 font-sans text-slate-800 scroll-smooth">
       {/* HEADER */}
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            <div className="flex items-center space-x-3">
+            {/* LOGO AREA */}
+            <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
               <div className="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden">
                 <img 
                   src={`${CDN_BASE}/logo.jpg`} 
@@ -209,31 +213,32 @@ export default function App() {
                   className="w-full h-full object-contain"
                   onError={(e) => {
                     e.target.onerror = null; 
-                    e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z'/%3E%3C/svg%3E";
+                    e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 24 24' fill='none' stroke='%23007acc' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z'/%3E%3C/svg%3E";
                   }}
                 />
               </div>
               <div>
-                <h1 className="text-2xl font-black tracking-tight text-blue-900">AXYZTANT</h1>
-                <p className="text-[10px] sm:text-xs font-semibold text-blue-600 tracking-widest uppercase">{t.slogan}</p>
+                <h1 className="text-2xl font-black tracking-tight text-[#007acc]">AXYZTANT</h1>
+                <p className="text-[10px] sm:text-xs font-bold text-[#007acc]/80 tracking-widest uppercase">{t.slogan}</p>
               </div>
-            </div>
+            </a>
+            
             <div className="hidden lg:flex space-x-8 text-sm font-medium text-slate-600">
-              <a href="#about" className="hover:text-blue-600 transition-colors">{t.nav.about}</a>
-              <a href="#ai-edge" className="hover:text-blue-600 transition-colors">{t.nav.aiEdge}</a>
-              <a href="#services" className="hover:text-blue-600 transition-colors">{t.nav.services}</a>
-              <a href="#portfolio" className="hover:text-blue-600 transition-colors">{t.nav.portfolio}</a>
-              <a href="#team" className="hover:text-blue-600 transition-colors">{t.nav.team}</a>
+              <a href="#about" className="hover:text-[#007acc] transition-colors">{t.nav.about}</a>
+              <a href="#ai-edge" className="hover:text-[#007acc] transition-colors">{t.nav.aiEdge}</a>
+              <a href="#services" className="hover:text-[#007acc] transition-colors">{t.nav.services}</a>
+              <a href="#portfolio" className="hover:text-[#007acc] transition-colors">{t.nav.portfolio}</a>
+              <a href="#team" className="hover:text-[#007acc] transition-colors">{t.nav.team}</a>
             </div>
             <div className="flex items-center space-x-4">
               {/* Language Switcher */}
               <div className="flex bg-slate-100 p-1 rounded-full border border-slate-200">
-                <button onClick={() => setLang('en')} className={`px-2.5 sm:px-3 py-1 rounded-full text-[10px] sm:text-xs font-bold transition-all ${lang === 'en' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>EN</button>
-                <button onClick={() => setLang('vi')} className={`px-2.5 sm:px-3 py-1 rounded-full text-[10px] sm:text-xs font-bold transition-all ${lang === 'vi' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>VI</button>
-                <button onClick={() => setLang('ja')} className={`px-2.5 sm:px-3 py-1 rounded-full text-[10px] sm:text-xs font-bold transition-all ${lang === 'ja' ? 'bg-white text-blue-600 shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>JP</button>
+                <button onClick={() => setLang('en')} className={`px-2.5 sm:px-3 py-1 rounded-full text-[10px] sm:text-xs font-bold transition-all ${lang === 'en' ? 'bg-white text-[#007acc] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>EN</button>
+                <button onClick={() => setLang('vi')} className={`px-2.5 sm:px-3 py-1 rounded-full text-[10px] sm:text-xs font-bold transition-all ${lang === 'vi' ? 'bg-white text-[#007acc] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>VI</button>
+                <button onClick={() => setLang('ja')} className={`px-2.5 sm:px-3 py-1 rounded-full text-[10px] sm:text-xs font-bold transition-all ${lang === 'ja' ? 'bg-white text-[#007acc] shadow-sm' : 'text-slate-500 hover:text-slate-700'}`}>JP</button>
               </div>
               <div className="hidden md:block">
-                <a href="#contact" className="bg-blue-600 text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-blue-700 transition-all shadow-md shadow-blue-500/20">
+                <a href="#contact" className="bg-[#007acc] text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-[#005c99] transition-all shadow-md shadow-[#007acc]/20">
                   {t.nav.contact}
                 </a>
               </div>
@@ -243,14 +248,14 @@ export default function App() {
       </nav>
 
       {/* HERO SECTION */}
-      <section className="relative bg-gradient-to-br from-blue-50 via-white to-cyan-50 overflow-hidden pt-16 pb-24 lg:pt-20 lg:pb-32 border-b border-slate-100">
+      <section className="relative bg-gradient-to-br from-[#007acc]/5 via-white to-cyan-50 overflow-hidden pt-16 pb-24 lg:pt-20 lg:pb-32 border-b border-slate-100">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03]"></div>
-        <div className="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 rounded-full bg-blue-400/20 blur-3xl"></div>
+        <div className="absolute top-0 right-0 -mr-40 -mt-40 w-96 h-96 rounded-full bg-[#007acc]/20 blur-3xl"></div>
         <div className="absolute bottom-0 left-0 -ml-40 -mb-40 w-96 h-96 rounded-full bg-cyan-400/20 blur-3xl"></div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center text-center">
           <div className="max-w-4xl flex flex-col items-center">
-            <div className="inline-flex items-center space-x-2 bg-blue-100/50 border border-blue-200 rounded-full px-4 py-1.5 mb-8 text-blue-700 text-sm font-semibold">
+            <div className="inline-flex items-center space-x-2 bg-[#007acc]/10 border border-[#007acc]/20 rounded-full px-4 py-1.5 mb-8 text-[#007acc] text-sm font-bold">
               <img 
                 src={`${CDN_BASE}/logo.jpg`} 
                 alt="Axyztant Mini Logo" 
@@ -261,13 +266,13 @@ export default function App() {
             </div>
             <h2 className="text-5xl md:text-6xl lg:text-7xl font-black tracking-tight leading-tight mb-6 text-slate-900">
               {t.hero.title1} <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">{t.hero.title2}</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#007acc] to-cyan-500">{t.hero.title2}</span>
             </h2>
             <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl mx-auto">
               {t.hero.desc}
             </p>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="#services" className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-blue-700 transition-colors flex items-center shadow-lg shadow-blue-600/30">
+              <a href="#services" className="bg-[#007acc] text-white px-8 py-4 rounded-lg font-bold hover:bg-[#005c99] transition-colors flex items-center shadow-lg shadow-[#007acc]/30">
                 {t.hero.btn1} <ChevronRight className="ml-2 w-5 h-5" />
               </a>
               <a href="#portfolio" className="bg-white text-slate-800 border border-slate-300 px-8 py-4 rounded-lg font-bold hover:bg-slate-50 transition-colors flex items-center shadow-sm">
@@ -307,7 +312,7 @@ export default function App() {
       <section id="ai-edge" className="py-24 bg-slate-50 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-3">{t.ai.badge}</h2>
+            <h2 className="text-sm font-bold tracking-widest text-[#007acc] uppercase mb-3">{t.ai.badge}</h2>
             <h3 className="text-4xl font-black text-slate-900 mb-6">{t.ai.title}</h3>
             <p className="text-lg text-slate-600">
               {t.ai.desc}
@@ -316,7 +321,7 @@ export default function App() {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <FeatureCard 
-              icon={<Cpu className="w-8 h-8 text-blue-500" />}
+              icon={<Cpu className="w-8 h-8 text-[#007acc]" />}
               title={t.ai.c1Title}
               desc={t.ai.c1Desc}
             />
@@ -339,12 +344,12 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
             <div className="max-w-2xl">
-              <h2 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-3">{t.services.badge}</h2>
+              <h2 className="text-sm font-bold tracking-widest text-[#007acc] uppercase mb-3">{t.services.badge}</h2>
               <h3 className="text-4xl font-black text-slate-900">{t.services.title}</h3>
             </div>
             <div className="flex space-x-2 bg-slate-100 p-1 rounded-lg border border-slate-200">
-              <button onClick={() => setActiveTab('services')} className={`px-6 py-2 rounded-md font-medium transition-all ${activeTab === 'services' ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-600 hover:text-blue-600'}`}>{t.services.tab1}</button>
-              <button onClick={() => setActiveTab('domains')} className={`px-6 py-2 rounded-md font-medium transition-all ${activeTab === 'domains' ? 'bg-blue-600 text-white shadow-sm' : 'text-slate-600 hover:text-blue-600'}`}>{t.services.tab2}</button>
+              <button onClick={() => setActiveTab('services')} className={`px-6 py-2 rounded-md font-bold transition-all ${activeTab === 'services' ? 'bg-[#007acc] text-white shadow-sm' : 'text-slate-600 hover:text-[#007acc]'}`}>{t.services.tab1}</button>
+              <button onClick={() => setActiveTab('domains')} className={`px-6 py-2 rounded-md font-bold transition-all ${activeTab === 'domains' ? 'bg-[#007acc] text-white shadow-sm' : 'text-slate-600 hover:text-[#007acc]'}`}>{t.services.tab2}</button>
             </div>
           </div>
 
@@ -359,12 +364,12 @@ export default function App() {
             </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="bg-blue-50/50 border border-blue-100 p-8 rounded-2xl hover:shadow-md transition-all">
-                <h4 className="text-xl font-bold mb-4 flex items-center text-slate-900"><Briefcase className="mr-3 text-blue-600" /> {t.services.d1}</h4>
+              <div className="bg-[#007acc]/5 border border-[#007acc]/20 p-8 rounded-2xl hover:shadow-md transition-all">
+                <h4 className="text-xl font-bold mb-4 flex items-center text-slate-900"><Briefcase className="mr-3 text-[#007acc]" /> {t.services.d1}</h4>
                 <ul className="space-y-3 text-slate-700 font-medium">
-                  <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-2 text-blue-500" /> {t.services.d1_1}</li>
-                  <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-2 text-blue-500" /> {t.services.d1_2}</li>
-                  <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-2 text-blue-500" /> {t.services.d1_3}</li>
+                  <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-2 text-[#007acc]" /> {t.services.d1_1}</li>
+                  <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-2 text-[#007acc]" /> {t.services.d1_2}</li>
+                  <li className="flex items-center"><ChevronRight className="w-4 h-4 mr-2 text-[#007acc]" /> {t.services.d1_3}</li>
                 </ul>
               </div>
               <div className="bg-cyan-50/50 border border-cyan-100 p-8 rounded-2xl hover:shadow-md transition-all">
@@ -392,7 +397,7 @@ export default function App() {
       <section className="py-24 bg-slate-50 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-3">{t.models.badge}</h2>
+            <h2 className="text-sm font-bold tracking-widest text-[#007acc] uppercase mb-3">{t.models.badge}</h2>
             <h3 className="text-4xl font-black text-slate-900">{t.models.title}</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -420,7 +425,7 @@ export default function App() {
       <section id="portfolio" className="py-24 bg-white border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-16">
-            <h2 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-3">{t.portfolio.badge}</h2>
+            <h2 className="text-sm font-bold tracking-widest text-[#007acc] uppercase mb-3">{t.portfolio.badge}</h2>
             <h3 className="text-4xl font-black text-slate-900">{t.portfolio.title}</h3>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
@@ -438,7 +443,7 @@ export default function App() {
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h4 className="text-2xl font-bold text-slate-900 mb-2">DuoScore</h4>
-                    <p className="text-sm font-medium text-blue-600">Scale-up Startup • Global</p>
+                    <p className="text-sm font-bold text-[#007acc]">Scale-up Startup • Global</p>
                   </div>
                   <span className="bg-slate-100 text-slate-600 text-xs px-3 py-1 rounded-full font-medium">FinTech / Web3</span>
                 </div>
@@ -463,7 +468,7 @@ export default function App() {
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h4 className="text-2xl font-bold text-slate-900 mb-2">SunGroup Core ERP</h4>
-                    <p className="text-sm font-medium text-blue-600">Enterprise Core System • Vietnam</p>
+                    <p className="text-sm font-bold text-[#007acc]">Enterprise Core System • Vietnam</p>
                   </div>
                   <span className="bg-slate-100 text-slate-600 text-xs px-3 py-1 rounded-full font-medium">ERP / DX</span>
                 </div>
@@ -488,7 +493,7 @@ export default function App() {
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h4 className="text-2xl font-bold text-slate-900 mb-2">RAMMDEX</h4>
-                    <p className="text-sm font-medium text-blue-600">30,000+ Active Users • Singapore</p>
+                    <p className="text-sm font-bold text-[#007acc]">30,000+ Active Users • Singapore</p>
                   </div>
                   <span className="bg-slate-100 text-slate-600 text-xs px-3 py-1 rounded-full font-medium">DeFi / DEX</span>
                 </div>
@@ -513,7 +518,7 @@ export default function App() {
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h4 className="text-2xl font-bold text-slate-900 mb-2">FlipJungle AI</h4>
-                    <p className="text-sm font-medium text-blue-600">EdTech Startup • Korea/Africa</p>
+                    <p className="text-sm font-bold text-[#007acc]">EdTech Startup • Korea/Africa</p>
                   </div>
                   <span className="bg-slate-100 text-slate-600 text-xs px-3 py-1 rounded-full font-medium">EdTech / AI</span>
                 </div>
@@ -531,7 +536,7 @@ export default function App() {
       <section id="team" className="py-24 bg-slate-50 border-t border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-             <h2 className="text-sm font-bold tracking-widest text-blue-600 uppercase mb-3">{t.team.badge}</h2>
+             <h2 className="text-sm font-bold tracking-widest text-[#007acc] uppercase mb-3">{t.team.badge}</h2>
              <h3 className="text-4xl font-black text-slate-900">{t.team.title}</h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -564,12 +569,12 @@ export default function App() {
             
             {/* Column 1: Brand & Contact (Span 5) */}
             <div className="md:col-span-12 lg:col-span-5 lg:pr-8">
-              <h2 className="text-lg font-bold text-blue-900 uppercase tracking-wide mb-6 h-8 flex items-center">AXYZTANT</h2>
+              <h2 className="text-lg font-black text-[#007acc] uppercase tracking-wide mb-6 h-8 flex items-center">AXYZTANT</h2>
               <p className="mb-6 font-medium text-slate-600 leading-relaxed">{t.footer.desc}</p>
               <div className="space-y-3 font-medium">
-                <p className="flex items-center"><Mail className="w-5 h-5 mr-3 text-blue-600"/> contact@axyztant.com</p>
-                <p className="flex items-center"><Phone className="w-5 h-5 mr-3 text-blue-600"/> (+84) 0899991187</p>
-                <p className="flex items-center"><Globe className="w-5 h-5 mr-3 text-blue-600"/> www.axyztant.com</p>
+                <p className="flex items-center"><Mail className="w-5 h-5 mr-3 text-[#007acc]"/> contact@axyztant.com</p>
+                <p className="flex items-center"><Phone className="w-5 h-5 mr-3 text-[#007acc]"/> (+84) 0899991187</p>
+                <p className="flex items-center"><Globe className="w-5 h-5 mr-3 text-[#007acc]"/> www.axyztant.com</p>
               </div>
             </div>
             
@@ -578,11 +583,11 @@ export default function App() {
               <h4 className="text-slate-900 font-bold mb-6 text-lg flex items-center h-8">{t.footer.loc}</h4>
               <ul className="space-y-4 font-medium text-slate-600">
                 <li className="flex items-start">
-                  <MapPin className="w-5 h-5 mr-3 text-blue-500 shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 mr-3 text-[#007acc] shrink-0 mt-0.5" />
                   <span>164/38 Nguyen Chanh, Da Nang</span>
                 </li>
                 <li className="flex items-start">
-                  <MapPin className="w-5 h-5 mr-3 text-blue-500 shrink-0 mt-0.5" />
+                  <MapPin className="w-5 h-5 mr-3 text-[#007acc] shrink-0 mt-0.5" />
                   <span>31 Nguyen Duy Trinh, Vinh, Nghe An</span>
                 </li>
               </ul>
@@ -592,10 +597,10 @@ export default function App() {
             <div className="md:col-span-6 lg:col-span-3">
               <h4 className="text-slate-900 font-bold mb-6 text-lg flex items-center h-8">{t.footer.comp}</h4>
               <ul className="space-y-3 font-medium text-slate-600">
-                <li><a href="#about" className="hover:text-blue-600 transition-colors">{t.nav.about}</a></li>
-                <li><a href="#services" className="hover:text-blue-600 transition-colors">{t.nav.services}</a></li>
-                <li><a href="#portfolio" className="hover:text-blue-600 transition-colors">{t.nav.portfolio}</a></li>
-                <li><a href="#team" className="hover:text-blue-600 transition-colors">{t.nav.team}</a></li>
+                <li><a href="#about" className="hover:text-[#007acc] transition-colors">{t.nav.about}</a></li>
+                <li><a href="#services" className="hover:text-[#007acc] transition-colors">{t.nav.services}</a></li>
+                <li><a href="#portfolio" className="hover:text-[#007acc] transition-colors">{t.nav.portfolio}</a></li>
+                <li><a href="#team" className="hover:text-[#007acc] transition-colors">{t.nav.team}</a></li>
               </ul>
             </div>
           </div>
@@ -613,7 +618,7 @@ export default function App() {
 function StatCard({ value, label, icon }) {
   return (
     <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm flex flex-col items-center text-center">
-      <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-4">
+      <div className="w-12 h-12 bg-[#007acc]/10 text-[#007acc] rounded-full flex items-center justify-center mb-4">
         {icon}
       </div>
       <h4 className="text-3xl font-black text-slate-900 mb-1">{value}</h4>
@@ -634,8 +639,8 @@ function FeatureCard({ icon, title, desc }) {
 
 function ServiceCard({ icon, title, desc }) {
   return (
-    <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-blue-300 transition-all">
-      <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center mb-6">
+    <div className="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md hover:border-[#007acc]/40 transition-all">
+      <div className="w-12 h-12 bg-[#007acc]/10 text-[#007acc] rounded-lg flex items-center justify-center mb-6">
         {icon}
       </div>
       <h4 className="text-xl font-bold text-slate-900 mb-3">{title}</h4>
@@ -646,10 +651,10 @@ function ServiceCard({ icon, title, desc }) {
 
 function ModelCard({ title, subtitle, desc, highlight = false }) {
   return (
-    <div className={`p-8 rounded-2xl border ${highlight ? 'bg-blue-600 border-blue-500 text-white shadow-xl shadow-blue-500/20 transform md:-translate-y-2' : 'bg-white border-slate-200 text-slate-800'}`}>
-      <p className={`text-sm font-bold mb-2 uppercase tracking-wide ${highlight ? 'text-blue-200' : 'text-blue-600'}`}>{subtitle}</p>
+    <div className={`p-8 rounded-2xl border ${highlight ? 'bg-[#007acc] border-[#007acc] text-white shadow-xl shadow-[#007acc]/20 transform md:-translate-y-2' : 'bg-white border-slate-200 text-slate-800'}`}>
+      <p className={`text-sm font-bold mb-2 uppercase tracking-wide ${highlight ? 'text-[#b3e0ff]' : 'text-[#007acc]'}`}>{subtitle}</p>
       <h4 className={`text-2xl font-black mb-4 ${highlight ? 'text-white' : 'text-slate-900'}`}>{title}</h4>
-      <p className={`${highlight ? 'text-blue-50' : 'text-slate-600'} leading-relaxed`}>{desc}</p>
+      <p className={`${highlight ? 'text-[#e6f5ff]' : 'text-slate-600'} leading-relaxed`}>{desc}</p>
     </div>
   );
 }
@@ -670,7 +675,7 @@ function TeamCard({ name, role, bio, imageSrc }) {
         />
       </div>
       <h4 className="text-xl font-bold text-slate-900 mb-1">{name}</h4>
-      <p className="text-sm font-bold text-blue-600 uppercase tracking-wide mb-4">{role}</p>
+      <p className="text-sm font-bold text-[#007acc] uppercase tracking-wide mb-4">{role}</p>
       <p className="text-slate-600 text-sm leading-relaxed">{bio}</p>
     </div>
   );
@@ -678,7 +683,7 @@ function TeamCard({ name, role, bio, imageSrc }) {
 
 function Tag({ text }) {
   return (
-    <span className="bg-blue-50 text-blue-700 border border-blue-100 text-xs px-2.5 py-1 rounded-md font-semibold">
+    <span className="bg-[#007acc]/10 text-[#007acc] border border-[#007acc]/20 text-xs px-2.5 py-1 rounded-md font-semibold">
       {text}
     </span>
   );
