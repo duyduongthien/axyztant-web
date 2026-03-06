@@ -60,7 +60,7 @@ const translations = {
       badge: "Leadership", title: "Meet Our Team",
       t1Desc: "15+ years experience driving enterprise digital transformation and complex ERP implementations. Expert in scaling high-performance teams via Agile, SAFe & CMMI.",
       t2Desc: "Ph.D. in Statistics (Trinity College Dublin). Former researcher at Huawei & Zalo. Expert in data science, statistical modeling, and integrating cutting-edge AI.",
-      t3Desc: "Master of FinTech. Growth strategist with top-tier Web3 ecosystem leadership. Former roles at RISE/BSX, Bitget, and CoinW.",
+      t3Desc: "Product Leader with deep expertise in AI agentic workflows. Former Senior Product Owner at FPT, driving cutting-edge AI solutions from greenfield development to brownfield optimization with sharp business acumen.",
       t4Desc: "Expert in architecting scalable AI systems and solving complex enterprise data challenges. Former Technical Lead at Viettel, mastering high-frequency integrations and autonomous agentic workflows.",
       t5Desc: "Expert in architecting and managing high-scale infrastructures. Former engineer at Vietcombank, mastering DevOps, cloud operations, and ensuring high availability for enterprise systems.",
       t6Desc: "Proven leadership in UX/UI and Frontend engineering for enterprise and Web3 platforms. Former Tech Lead at VNPT Media, mastering scalable, user-centric digital experiences."
@@ -124,7 +124,7 @@ const translations = {
       badge: "Ban Lãnh đạo", title: "Đội ngũ Chuyên gia",
       t1Desc: "Hơn 15 năm kinh nghiệm dẫn dắt chuyển đổi số và triển khai ERP phức tạp. Chuyên gia xây dựng đội ngũ kỹ thuật thông qua Agile, SAFe & CMMI.",
       t2Desc: "Tiến sĩ Thống kê (Trinity College Dublin). Cựu nghiên cứu viên Huawei & Zalo. Chuyên gia Khoa học Dữ liệu và Tích hợp AI.",
-      t3Desc: "Thạc sĩ FinTech. Chuyên gia chiến lược tăng trưởng với kinh nghiệm lãnh đạo các hệ sinh thái Web3 hàng đầu (RISE/BSX, Bitget, CoinW).",
+      t3Desc: "Chuyên gia phát triển sản phẩm với chuyên môn sâu về luồng tác vụ AI tự trị (Agentic workflows). Cựu Senior Product Owner tại FPT, nhạy bén trong thiết kế và tối ưu hóa giải pháp AI từ giai đoạn xây dựng mới đến nâng cấp hệ thống.",
       t4Desc: "Chuyên gia kiến trúc hệ thống AI và xử lý dữ liệu lớn. Từng đảm nhiệm vị trí Tech Lead tại Viettel, sở hữu chuyên môn sâu rộng về tích hợp hệ thống tần suất cao và thiết kế luồng tác vụ AI tự trị (Agentic workflows).",
       t5Desc: "Chuyên gia thiết kế và vận hành hạ tầng công nghệ quy mô lớn. Từng công tác tại Vietcombank, với thế mạnh cốt lõi về DevOps, điện toán đám mây và đảm bảo độ ổn định tuyệt đối cho các hệ thống trọng yếu.",
       t6Desc: "Chuyên gia UX/UI và Frontend với nhiều năm dẫn dắt các dự án Enterprise và Web3. Từng là Tech Lead tại VNPT Media, am hiểu sâu sắc việc tối ưu hóa và thiết kế trải nghiệm số lấy người dùng làm trung tâm."
@@ -188,7 +188,7 @@ const translations = {
       badge: "リーダーシップ", title: "経営陣・エキスパート",
       t1Desc: "エンタープライズDXと複雑なERP導入において15年以上の経験を持つ。Agile、SAFe、CMMI基準を用いた大規模開発チームのマネジメントを牽引。",
       t2Desc: "アイルランド・トリニティカレッジ統計学博士。元Huawei、Zalo研究員。データサイエンスと最先端AIのエンタープライズ実装における世界的スペシャリスト。",
-      t3Desc: "FinTech修士。トップティアのWeb3エコシステム（RISE/BSX、Bitget、CoinW）での要職を歴任した、グローバル事業拡大・成長戦略のプロフェッショナル。",
+      t3Desc: "AIエージェントワークフローに精通するプロダクトリーダー。FPTの元シニアPOとして、新規構築から既存最適化まで、鋭いビジネスセンスで最先端のAIソリューションを牽引。",
       t4Desc: "大規模AIシステムアーキテクチャおよび複雑なデータ解析の専門家。Viettelでのテックリード経験を持ち、高頻度システム統合や自律型AIワークフロー設計に深い知見を持つ。",
       t5Desc: "大規模インフラストラクチャ設計・運用のスペシャリスト。Vietcombankでの経験を活かし、DevOps、クラウドアーキテクチャ、ミッションクリティカルなシステムの高可用性（HA）担保を強みとする。",
       t6Desc: "エンタープライズおよびWeb3向けUX/UI・フロントエンド開発のエキスパート。VNPT Mediaでのテックリード経験を持ち、スケーラブルでユーザー中心のデジタル体験設計に精通。"
@@ -562,10 +562,10 @@ export default function App() {
               imageSrc={`${CDN_BASE}/harvey-pham.jpg`}
             />
             <TeamCard 
-              name="Oliver Duong" 
-              role="COO" 
+              name="Donald Nguyen" 
+              role="Head of Product" 
               bio={t.team.t3Desc}
-              imageSrc={`${CDN_BASE}/oliver-duong.jpg`}
+              imageSrc={`${CDN_BASE}/donald-nguyen.jpg`}
             />
             <TeamCard 
               name="Harris Vu" 
