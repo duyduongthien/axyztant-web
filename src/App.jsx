@@ -51,18 +51,20 @@ const translations = {
     },
     portfolio: {
       badge: "Our Works", title: "Featured Portfolio",
-      p1Desc: "Privacy-preserving credit scoring model utilizing AI to analyze multi-dimensional data, ensuring user data sovereignty while eliminating bias.",
-      p2Desc: "Digital transformation of the core ERP for thousands of employees, streamlining massive internal workflows and optimizing efficiency.",
-      p3Desc: "Highly secure, anti-manipulation decentralized exchange (DEX) on Polygon network featuring advanced wallet integration.",
-      p4Desc: "Innovative AI-powered educational app delivering highly personalized learning experiences, scaled robustly across the African continent."
+      p1Desc: "Architected a next-generation FinTech/Web3 platform. Engineered a privacy-preserving credit scoring model utilizing AI to analyze multi-dimensional data, ensuring user data sovereignty while eliminating systemic bias.",
+      p2Desc: "Spearheaded the digital transformation and modernization of the core Enterprise Resource Planning (ERP) system for SunGroup. The upgraded solution serves thousands of employees, streamlining massive internal workflows.",
+      p3Desc: "Engineered and launched a highly secure, anti-manipulation decentralized exchange (DEX) on the Polygon network. Features advanced wallet integration and liquidity pools, serving 30,000+ active users.",
+      p4Desc: "Migrated and scaled a national AI-powered e-learning platform to serve millions of Vietnamese students. Applied advanced OCR and big data pipelines to digitize K-12 curricula with personalized learning paths.",
+      p5Desc: "Deployed an innovative AI-powered educational application for children. Leverages applied Machine Learning for highly personalized experiences, scaling robust cloud infrastructure from Korea to the African continent.",
+      p6Desc: "Designed and scaled an AI-driven bus routing optimization engine across US school districts. Combined combinatorial optimization with real-world constraints to deliver a 25-30% reduction in transportation costs."
     },
     team: {
       badge: "Leadership", title: "Meet Our Team",
       t1Desc: "15+ years experience driving enterprise digital transformation and complex ERP implementations. Expert in scaling high-performance teams via Agile, SAFe & CMMI.",
       t2Desc: "Ph.D. in Statistics (Trinity College Dublin). Former researcher at Huawei & Zalo. Expert in data science, statistical modeling, and integrating cutting-edge AI.",
-      t3Desc: "Master of FinTech. Growth strategist with top-tier Web3 ecosystem leadership. Former roles at RISE/BSX, Bitget, and CoinW.",
+      t3Desc: "MBA-credentialed growth strategy & CX expert. Former Strategy Lead at MISA and Senior CX Strategist at Viettel Cyber Security, mastering Go-To-Market (GTM) execution and data-driven market expansion.",
       t4Desc: "Product Leader with deep expertise in AI agentic workflows. Former Senior Product Owner at FPT, driving cutting-edge AI solutions from greenfield development to brownfield optimization with sharp business acumen.",
-      t5Desc: "Senior business leader with extensive experience in cryptocurrency exchanges, FinTech, and Web3 ecosystems. Proven track record in market expansion, strategic partner networks, and driving user acquisition across competitive markets.",
+      t5Desc: "Senior business leader with extensive experience in cryptocurrency exchanges, FinTech, and Web3 ecosystems. Proven track record in market expansion, strategic partner networks, and user acquisition.",
       t6Desc: "Expert in architecting scalable AI systems and solving complex enterprise data challenges. Former Technical Lead at Viettel, mastering high-frequency integrations and autonomous agentic workflows.",
       t7Desc: "Expert in architecting and managing high-scale infrastructures. Former engineer at Vietcombank, mastering DevOps, cloud operations, and ensuring high availability for enterprise systems.",
       t8Desc: "Proven leadership in UX/UI and Frontend engineering for enterprise and Web3 platforms. Former Tech Lead at VNPT Media, mastering scalable, user-centric digital experiences.",
@@ -118,16 +120,18 @@ const translations = {
     },
     portfolio: {
       badge: "Dự án Nổi bật", title: "Dự án Tiêu biểu",
-      p1Desc: "Mô hình chấm điểm tín dụng bảo mật sử dụng AI để phân tích dữ liệu đa chiều, đảm bảo chủ quyền dữ liệu người dùng và loại bỏ định kiến.",
-      p2Desc: "Chuyển đổi số hệ thống ERP lõi cho hàng ngàn nhân viên, tối ưu hóa quy trình làm việc nội bộ và nâng cao năng suất.",
-      p3Desc: "Sàn giao dịch phi tập trung (DEX) bảo mật cao, chống thao túng trên mạng lưới Polygon với tích hợp ví điện tử nâng cao.",
-      p4Desc: "Ứng dụng giáo dục tích hợp AI sáng tạo, mang đến trải nghiệm học tập cá nhân hóa, mở rộng mạnh mẽ khắp lục địa Châu Phi."
+      p1Desc: "Kiến trúc nền tảng FinTech/Web3 thế hệ mới. Xây dựng mô hình chấm điểm tín dụng bảo vệ quyền riêng tư bằng AI phân tích dữ liệu đa chiều, đảm bảo chủ quyền dữ liệu và loại bỏ định kiến hệ thống.",
+      p2Desc: "Dẫn dắt công cuộc chuyển đổi số và hiện đại hóa hệ thống ERP lõi cho SunGroup. Giải pháp phục vụ hàng ngàn nhân viên liên phòng ban, tối ưu hóa triệt để luồng công việc khổng lồ và nâng cao hiệu suất.",
+      p3Desc: "Xây dựng và ra mắt sàn giao dịch phi tập trung (DEX) bảo mật cao, chống thao túng trên mạng lưới Polygon. Tích hợp ví nâng cao và pools thanh khoản, phục vụ hơn 30.000 người dùng ngay khi ra mắt.",
+      p4Desc: "Dịch chuyển và mở rộng nền tảng e-learning tích hợp AI quốc gia phục vụ hàng triệu học sinh Việt Nam. Ứng dụng OCR và Big Data số hóa giáo trình K-12, cung cấp lộ trình học cá nhân hóa quy mô toàn quốc.",
+      p5Desc: "Triển khai ứng dụng giáo dục tích hợp AI đột phá. Ứng dụng Machine Learning mang đến trải nghiệm học tập cá nhân hóa, mở rộng mạnh mẽ hạ tầng đám mây từ Hàn Quốc đến khắp lục địa Châu Phi.",
+      p6Desc: "Thiết kế và mở rộng công cụ tối ưu tuyến xe buýt bằng AI tại các khu vực trường học ở Mỹ. Kết hợp tối ưu hóa tổ hợp với ràng buộc thực tế, giúp tự động hóa quy trình và giảm 25-30% chi phí vận tải."
     },
     team: {
       badge: "Ban Lãnh đạo", title: "Đội ngũ Chuyên gia",
       t1Desc: "Hơn 15 năm kinh nghiệm dẫn dắt chuyển đổi số và triển khai ERP phức tạp. Chuyên gia xây dựng đội ngũ kỹ thuật thông qua Agile, SAFe & CMMI.",
       t2Desc: "Tiến sĩ Thống kê (Trinity College Dublin). Cựu nghiên cứu viên Huawei & Zalo. Chuyên gia Khoa học Dữ liệu và Tích hợp AI.",
-      t3Desc: "Thạc sĩ FinTech. Chuyên gia chiến lược tăng trưởng với kinh nghiệm lãnh đạo các hệ sinh thái Web3 hàng đầu (RISE/BSX, Bitget, CoinW).",
+      t3Desc: "Chuyên gia chiến lược tăng trưởng & CX sở hữu bằng MBA. Từng đảm nhiệm Strategy Lead tại MISA và Senior CX Strategist tại Viettel Cyber Security, am hiểu sâu sắc thực thi Go-To-Market (GTM) và mở rộng thị trường.",
       t4Desc: "Chuyên gia phát triển sản phẩm với chuyên môn sâu về luồng tác vụ AI tự trị (Agentic workflows). Cựu Senior Product Owner tại FPT, nhạy bén trong thiết kế và tối ưu hóa giải pháp AI từ giai đoạn xây dựng mới đến nâng cấp hệ thống.",
       t5Desc: "Lãnh đạo kinh doanh cấp cao với kinh nghiệm dày dạn trong lĩnh vực sàn giao dịch Crypto, FinTech và hệ sinh thái Web3. Sở hữu thành tích xuất sắc về mở rộng thị trường, xây dựng mạng lưới đối tác chiến lược và thúc đẩy tăng trưởng người dùng.",
       t6Desc: "Chuyên gia kiến trúc hệ thống AI và xử lý dữ liệu lớn. Từng đảm nhiệm vị trí Tech Lead tại Viettel, sở hữu chuyên môn sâu rộng về tích hợp hệ thống tần suất cao và thiết kế luồng tác vụ AI tự trị (Agentic workflows).",
@@ -185,16 +189,18 @@ const translations = {
     },
     portfolio: {
       badge: "主要実績", title: "最新のプロジェクト事例",
-      p1Desc: "AIを活用して多次元データを解析する、プライバシー保護型の信用スコアリング基盤。データの主権をユーザーに返しつつ、審査バイアスを排除。",
-      p2Desc: "数千人規模の従業員が利用するコアERPシステムのデジタルトランスフォーメーション。複雑な社内ワークフローを合理化し、業務効率を劇的に向上。",
-      p3Desc: "Polygonネットワーク上に構築された、高度なセキュリティとウォレット統合機能を備える分散型取引所（DEX）。",
-      p4Desc: "AIによるパーソナライズされた学習体験を提供する革新的なEdTechアプリ。アフリカ大陸の学生向けにスケーラブルなクラウド基盤で展開。"
+      p1Desc: "次世代FinTech/Web3プラットフォーム。AIを活用して多次元データを解析するプライバシー保護型の信用スコアリングモデルを構築し、データ主権を確保しつつシステムバイアスを排除。",
+      p2Desc: "ベトナム有数のコングロマリットSunGroupのコアERPシステムのDXを主導。数千人の従業員が利用するシステムをアップグレードし、大規模な社内ワークフローの合理化を実現。",
+      p3Desc: "Polygonネットワーク上で、高度なセキュリティを備えた分散型取引所（DEX）を構築。高度なウォレット統合と流動性プールを備え、初期展開で3万人以上のアクティブユーザーにサービスを提供。",
+      p4Desc: "数百万人のベトナムの学生向けにAI搭載のeラーニングプラットフォームを拡張。OCRとビッグデータを用いてK-12カリキュラムをデジタル化し、全国規模で学習経路をパーソナライズ。",
+      p5Desc: "革新的なAI搭載教育アプリを展開。機械学習を活用して高度にパーソナライズされた学習体験を提供し、韓国からアフリカ大陸の学生へとクラウドインフラを堅牢にスケール。",
+      p6Desc: "米国の学区で展開されるAI駆動のバスルート最適化エンジンを設計。組み合わせ最適化と現実の制約を融合させ、手動ワークフローを自動化し、輸送コストを25〜30％削減。"
     },
     team: {
       badge: "リーダーシップ", title: "経営陣・エキスパート",
       t1Desc: "エンタープライズDXと複雑なERP導入において15年以上の経験を持つ。Agile、SAFe、CMMI基準を用いた大規模開発チームのマネジメントを牽引。",
       t2Desc: "アイルランド・トリニティカレッジ統計学博士。元Huawei、Zalo研究員。データサイエンスと最先端AIのエンタープライズ実装における世界的スペシャリスト。",
-      t3Desc: "FinTech修士。トップティアのWeb3エコシステム（RISE/BSX、Bitget、CoinW）での要職を歴任した、グローバル事業拡大・成長戦略のプロフェッショナル。",
+      t3Desc: "MBA取得の成長戦略とCXのエキスパート。MISAの戦略リードやViettelのシニアCXストラテジストを歴任し、GTM戦略の実行とデータ駆動型の市場拡大に精通。",
       t4Desc: "AIエージェントワークフローに精通するプロダクトリーダー。FPTの元シニアPOとして、新規構築から既存最適化まで、鋭いビジネスセンスで最先端のAIソリューションを牽引。",
       t5Desc: "暗号資産取引所、FinTech、Web3エコシステムにおける豊富な経験を持つシニアビジネスリーダー。市場拡大、戦略的パートナーシップ構築、および競争市場でのユーザー獲得・成長推進において確かな実績を持つ。",
       t6Desc: "大規模AIシステムアーキテクチャおよび複雑なデータ解析の専門家。Viettelでのテックリード経験を持ち、高頻度システム統合や自律型AIワークフロー設計に深い知見を持つ。",
@@ -222,7 +228,7 @@ export default function App() {
       <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
-            {/* LOGO AREA */}
+            {/* LOGO AREA - Correctly wrapped in anchor tag for routing */}
             <a href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
               <div className="w-12 h-12 rounded-lg flex items-center justify-center overflow-hidden">
                 <img 
@@ -448,7 +454,7 @@ export default function App() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
             {/* Project 1 */}
-            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col">
               <div className="h-64 bg-slate-200 relative overflow-hidden">
                 <img 
                   src={`${CDN_BASE}/duoscore-cover.jpg`} 
@@ -457,23 +463,23 @@ export default function App() {
                   onError={(e) => { e.target.src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="; e.target.className="w-full h-full object-cover bg-slate-200" }}
                 />
               </div>
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h4 className="text-2xl font-bold text-slate-900 mb-2">DuoScore</h4>
-                    <p className="text-sm font-bold text-[#007acc]">Scale-up Startup • Global</p>
+                    <p className="text-sm font-bold text-[#007acc]">Credit Scoring Ecosystem</p>
                   </div>
-                  <span className="bg-slate-100 text-slate-600 text-xs px-3 py-1 rounded-full font-medium">FinTech / Web3</span>
+                  <span className="bg-slate-100 text-slate-600 text-xs px-3 py-1 rounded-full font-medium shrink-0">FinTech / Web3</span>
                 </div>
-                <p className="text-slate-600 mb-6">{t.portfolio.p1Desc}</p>
-                <div className="flex gap-2 flex-wrap">
+                <p className="text-slate-600 mb-6 flex-grow">{t.portfolio.p1Desc}</p>
+                <div className="flex gap-2 flex-wrap mt-auto">
                   <Tag text="Web3" /><Tag text="AI" /><Tag text="Smart Contracts" />
                 </div>
               </div>
             </div>
 
             {/* Project 2 */}
-            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col">
               <div className="h-64 bg-slate-200 relative overflow-hidden">
                 <img 
                   src={`${CDN_BASE}/sungroup-erp-cover.jpg`} 
@@ -482,23 +488,23 @@ export default function App() {
                   onError={(e) => { e.target.src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="; e.target.className="w-full h-full object-cover bg-slate-200" }}
                 />
               </div>
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h4 className="text-2xl font-bold text-slate-900 mb-2">SunGroup Core ERP</h4>
-                    <p className="text-sm font-bold text-[#007acc]">Enterprise Core System • Vietnam</p>
+                    <p className="text-sm font-bold text-[#007acc]">Enterprise Modernization</p>
                   </div>
-                  <span className="bg-slate-100 text-slate-600 text-xs px-3 py-1 rounded-full font-medium">ERP / DX</span>
+                  <span className="bg-slate-100 text-slate-600 text-xs px-3 py-1 rounded-full font-medium shrink-0">ERP / DX</span>
                 </div>
-                <p className="text-slate-600 mb-6">{t.portfolio.p2Desc}</p>
-                <div className="flex gap-2 flex-wrap">
+                <p className="text-slate-600 mb-6 flex-grow">{t.portfolio.p2Desc}</p>
+                <div className="flex gap-2 flex-wrap mt-auto">
                   <Tag text="ERP" /><Tag text="Cloud Infra" /><Tag text="API Integrations" />
                 </div>
               </div>
             </div>
             
             {/* Project 3 */}
-            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col">
                <div className="h-64 bg-slate-200 relative overflow-hidden">
                 <img 
                   src={`${CDN_BASE}/rammdex-cover.jpg`} 
@@ -507,23 +513,48 @@ export default function App() {
                   onError={(e) => { e.target.src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="; e.target.className="w-full h-full object-cover bg-slate-200" }}
                 />
               </div>
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h4 className="text-2xl font-bold text-slate-900 mb-2">RAMMDEX</h4>
-                    <p className="text-sm font-bold text-[#007acc]">30,000+ Active Users • Singapore</p>
+                    <p className="text-sm font-bold text-[#007acc]">Decentralized Exchange</p>
                   </div>
-                  <span className="bg-slate-100 text-slate-600 text-xs px-3 py-1 rounded-full font-medium">DeFi / DEX</span>
+                  <span className="bg-slate-100 text-slate-600 text-xs px-3 py-1 rounded-full font-medium shrink-0">DeFi / DEX</span>
                 </div>
-                <p className="text-slate-600 mb-6">{t.portfolio.p3Desc}</p>
-                <div className="flex gap-2 flex-wrap">
-                  <Tag text="Solidity" /><Tag text="ReactJS" /><Tag text="NodeJS" /><Tag text="Polygon" />
+                <p className="text-slate-600 mb-6 flex-grow">{t.portfolio.p3Desc}</p>
+                <div className="flex gap-2 flex-wrap mt-auto">
+                  <Tag text="Solidity" /><Tag text="Polygon" /><Tag text="ReactJS" />
                 </div>
               </div>
             </div>
 
-             {/* Project 4 */}
-             <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100">
+            {/* Project 4 */}
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col">
+               <div className="h-64 bg-slate-200 relative overflow-hidden">
+                <img 
+                  src={`${CDN_BASE}/kienguru-cover.jpg`} 
+                  alt="KienGuru Project" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 bg-slate-200"
+                  onError={(e) => { e.target.src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="; e.target.className="w-full h-full object-cover bg-slate-200" }}
+                />
+              </div>
+              <div className="p-8 flex flex-col flex-grow">
+                <div className="flex justify-between items-start mb-4">
+                  <div>
+                    <h4 className="text-2xl font-bold text-slate-900 mb-2">KienGuru</h4>
+                    <p className="text-sm font-bold text-[#007acc]">National E-Learning</p>
+                  </div>
+                  <span className="bg-slate-100 text-slate-600 text-xs px-3 py-1 rounded-full font-medium shrink-0">EdTech / AI</span>
+                </div>
+                <p className="text-slate-600 mb-6 flex-grow">{t.portfolio.p4Desc}</p>
+                <div className="flex gap-2 flex-wrap mt-auto">
+                  <Tag text="Big Data" /><Tag text="OCR" /><Tag text="Cloud" />
+                </div>
+              </div>
+            </div>
+
+            {/* Project 5 */}
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col">
                <div className="h-64 bg-slate-200 relative overflow-hidden">
                 <img 
                   src={`${CDN_BASE}/flipjungle-cover.jpg`} 
@@ -532,17 +563,42 @@ export default function App() {
                   onError={(e) => { e.target.src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="; e.target.className="w-full h-full object-cover bg-slate-200" }}
                 />
               </div>
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <h4 className="text-2xl font-bold text-slate-900 mb-2">FlipJungle AI</h4>
-                    <p className="text-sm font-bold text-[#007acc]">EdTech Startup • Korea/Africa</p>
+                    <p className="text-sm font-bold text-[#007acc]">AI EdTech Platform</p>
                   </div>
-                  <span className="bg-slate-100 text-slate-600 text-xs px-3 py-1 rounded-full font-medium">EdTech / AI</span>
+                  <span className="bg-slate-100 text-slate-600 text-xs px-3 py-1 rounded-full font-medium shrink-0">EdTech / AI</span>
                 </div>
-                <p className="text-slate-600 mb-6">{t.portfolio.p4Desc}</p>
-                <div className="flex gap-2 flex-wrap">
-                  <Tag text="Applied AI" /><Tag text="Mobile App" /><Tag text="Cloud" />
+                <p className="text-slate-600 mb-6 flex-grow">{t.portfolio.p5Desc}</p>
+                <div className="flex gap-2 flex-wrap mt-auto">
+                  <Tag text="Machine Learning" /><Tag text="Cloud" /><Tag text="Mobile App" />
+                </div>
+              </div>
+            </div>
+
+            {/* Project 6 */}
+            <div className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all border border-slate-100 flex flex-col">
+               <div className="h-64 bg-slate-200 relative overflow-hidden">
+                <img 
+                  src={`${CDN_BASE}/4mativ-cover.jpg`} 
+                  alt="4Mativ Project" 
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 bg-slate-200"
+                  onError={(e) => { e.target.src = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="; e.target.className="w-full h-full object-cover bg-slate-200" }}
+                />
+              </div>
+              <div className="p-8 flex flex-col flex-grow">
+                <div className="flex justify-between items-start mb-4">
+                  <div>
+                    <h4 className="text-2xl font-bold text-slate-900 mb-2">4Mativ</h4>
+                    <p className="text-sm font-bold text-[#007acc]">Routing Optimization Engine</p>
+                  </div>
+                  <span className="bg-slate-100 text-slate-600 text-xs px-3 py-1 rounded-full font-medium shrink-0">Logistics / AI</span>
+                </div>
+                <p className="text-slate-600 mb-6 flex-grow">{t.portfolio.p6Desc}</p>
+                <div className="flex gap-2 flex-wrap mt-auto">
+                  <Tag text="Data Analytics" /><Tag text="Algorithm" /><Tag text="Cloud" />
                 </div>
               </div>
             </div>
@@ -571,10 +627,10 @@ export default function App() {
               imageSrc={`${CDN_BASE}/harvey-pham.jpg`}
             />
             <TeamCard 
-              name="Oliver Duong" 
-              role="COO" 
+              name="Miguel Pham, MBA" 
+              role="Growth Manager" 
               bio={t.team.t3Desc}
-              imageSrc={`${CDN_BASE}/oliver-duong.jpg`}
+              imageSrc={`${CDN_BASE}/miguel-pham.jpg`}
             />
             <TeamCard 
               name="Donald Nguyen" 
@@ -638,11 +694,15 @@ export default function App() {
               <ul className="space-y-4 font-medium text-slate-600">
                 <li className="flex items-start">
                   <MapPin className="w-5 h-5 mr-3 text-[#007acc] shrink-0 mt-0.5" />
+                  <span>151 Nguyen Thai Hoc, Hanoi</span>
+                </li>
+                <li className="flex items-start">
+                  <MapPin className="w-5 h-5 mr-3 text-[#007acc] shrink-0 mt-0.5" />
                   <span>164/38 Nguyen Chanh, Da Nang</span>
                 </li>
                 <li className="flex items-start">
                   <MapPin className="w-5 h-5 mr-3 text-[#007acc] shrink-0 mt-0.5" />
-                  <span>31 Nguyen Duy Trinh, Vinh, Nghe An</span>
+                  <span>31 Nguyen Duy Trinh, Nghe An</span>
                 </li>
               </ul>
             </div>
@@ -660,7 +720,7 @@ export default function App() {
           </div>
           
           <div className="pt-8 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center text-sm font-medium text-slate-400">
-            <p>© 2026 Axyztant Technology. All rights reserved. <span className="ml-2 border-l border-slate-300/50 pl-2 text-slate-300">v3.0</span></p>
+            <p>© 2026 Axyztant Technology. All rights reserved. <span className="ml-2 border-l border-slate-300/50 pl-2 text-slate-300">v4.5</span></p>
           </div>
         </div>
       </footer>
@@ -715,8 +775,8 @@ function ModelCard({ title, subtitle, desc, highlight = false }) {
 
 function TeamCard({ name, role, bio, imageSrc }) {
   return (
-    <div className="bg-white rounded-2xl p-8 border border-slate-100 text-center shadow-sm hover:shadow-lg transition-all">
-      <div className="w-32 h-32 mx-auto bg-slate-200 rounded-full mb-6 overflow-hidden border-4 border-white shadow-md relative">
+    <div className="bg-white rounded-2xl p-8 border border-slate-100 text-center shadow-sm hover:shadow-lg transition-all flex flex-col h-full">
+      <div className="w-32 h-32 mx-auto bg-slate-200 rounded-full mb-6 overflow-hidden border-4 border-white shadow-md relative shrink-0">
         <img 
           src={imageSrc} 
           alt={name} 
@@ -729,8 +789,8 @@ function TeamCard({ name, role, bio, imageSrc }) {
         />
       </div>
       <h4 className="text-xl font-bold text-slate-900 mb-1">{name}</h4>
-      <p className="text-sm font-bold text-[#007acc] uppercase tracking-wide mb-4">{role}</p>
-      <p className="text-slate-600 text-sm leading-relaxed">{bio}</p>
+      <p className="text-sm font-bold text-[#007acc] uppercase tracking-wide mb-4 shrink-0">{role}</p>
+      <p className="text-slate-600 text-sm leading-relaxed flex-grow">{bio}</p>
     </div>
   );
 }
@@ -740,13 +800,5 @@ function Tag({ text }) {
     <span className="bg-[#007acc]/10 text-[#007acc] border border-[#007acc]/20 text-xs px-2.5 py-1 rounded-md font-semibold">
       {text}
     </span>
-  );
-}
-
-function SparkleIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
-      <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
-    </svg>
   );
 }
